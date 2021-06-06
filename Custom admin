@@ -1,0 +1,103 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Custom = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Signature = Instance.new("TextLabel")
+local CMDX = Instance.new("TextButton")
+local Infiniteyield = Instance.new("TextButton")
+local TrollR6 = Instance.new("TextButton")
+
+--Properties:
+
+Custom.Name = "Custom"
+Custom.Parent = game.CoreGui
+Custom.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = Custom
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.Position = UDim2.new(0.040650405, 0, 0.607092202, 0)
+Main.Size = UDim2.new(0, 193, 0, 277)
+Main.Active = true
+Main.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+Title.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Title.BorderSizePixel = 3
+Title.Size = UDim2.new(0, 193, 0, 41)
+Title.Font = Enum.Font.SourceSans
+Title.Text = " Admins"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Signature.Name = "Signature"
+Signature.Parent = Main
+Signature.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Signature.BackgroundTransparency = 1.000
+Signature.Position = UDim2.new(0.663212419, 0, 0.935018063, 0)
+Signature.Size = UDim2.new(0, 65, 0, 18)
+Signature.Font = Enum.Font.SourceSans
+Signature.Text = "l_GarQ"
+Signature.TextColor3 = Color3.fromRGB(255, 170, 0)
+Signature.TextScaled = true
+Signature.TextSize = 14.000
+Signature.TextWrapped = true
+
+CMDX.Name = "CMD-X"
+CMDX.Parent = Main
+CMDX.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+CMDX.BorderColor3 = Color3.fromRGB(255, 170, 0)
+CMDX.BorderSizePixel = 3
+CMDX.Position = UDim2.new(0.0880829021, 0, 0.209386274, 0)
+CMDX.Size = UDim2.new(0, 158, 0, 50)
+CMDX.Font = Enum.Font.SciFi
+CMDX.Text = "CMD-X"
+CMDX.TextColor3 = Color3.fromRGB(0, 0, 0)
+CMDX.TextScaled = true
+CMDX.TextSize = 14.000
+CMDX.TextWrapped = true
+CMDX.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gary244/CMD-XD/main/CMD-X", true))()
+end)
+
+Infiniteyield.Name = "Infinite yield"
+Infiniteyield.Parent = Main
+Infiniteyield.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+Infiniteyield.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Infiniteyield.BorderSizePixel = 3
+Infiniteyield.Position = UDim2.new(0.0880829021, 0, 0.447653413, 0)
+Infiniteyield.Size = UDim2.new(0, 158, 0, 50)
+Infiniteyield.Font = Enum.Font.SciFi
+Infiniteyield.Text = "Inf-Yield"
+Infiniteyield.TextColor3 = Color3.fromRGB(0, 0, 0)
+Infiniteyield.TextScaled = true
+Infiniteyield.TextSize = 14.000
+Infiniteyield.TextWrapped = true
+Infiniteyield.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+TrollR6.Name = "Troll R6"
+TrollR6.Parent = Main
+TrollR6.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+TrollR6.BorderColor3 = Color3.fromRGB(255, 170, 0)
+TrollR6.BorderSizePixel = 3
+TrollR6.Position = UDim2.new(0.0880829021, 0, 0.693140805, 0)
+TrollR6.Size = UDim2.new(0, 158, 0, 50)
+TrollR6.Font = Enum.Font.SciFi
+TrollR6.Text = "R6-Trolls"
+TrollR6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TrollR6.TextScaled = true
+TrollR6.TextSize = 14.000
+TrollR6.TextWrapped = true
+TrollR6.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gary244/Troll/main/troll", true))()
+end)
